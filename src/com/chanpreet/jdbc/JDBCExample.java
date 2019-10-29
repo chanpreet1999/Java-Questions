@@ -16,7 +16,7 @@ public class JDBCExample {
 		
 		//url to connect
 		//here javaPrac is the name of the database,and the other part is hte port no on which it runs
-		// dont change the rest of the url unless you are not using mySQL
+		// Don't change the rest of the url unless you are not using mySQL
 		String url ="jdbc:mysql://localhost:3306/javaPrac";
 		
 		//username and password of sql
