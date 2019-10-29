@@ -6,6 +6,7 @@ public class Score {
 	void input() throws Exception{
 		Scanner sc = new Scanner(System.in);
 		try{
+			System.out.print("Enter a Score: ");
 			int score =sc.nextInt();
 			if(score<30) {
 				throw new CustomExceptionClass();

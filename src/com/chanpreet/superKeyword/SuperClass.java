@@ -8,6 +8,5 @@ public class SuperClass {
 	}
 	public void func(){
 		System.out.println("Function of SuperClass");
-	}
-	
+	}	
 }

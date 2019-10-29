@@ -10,10 +10,10 @@ public class PrimeTillN {
 		boolean flag=true;
 		System.out.println("Find Prime nos till N");
 		Scanner sc=new Scanner(System.in);
-		System.out.println("\nEnter N:");
+		System.out.print("\nEnter N:");
 		n=sc.nextInt();
 		sc.close();
-		System.out.println("prime nos till "+ n +" are:");
+		System.out.print("prime nos till "+ n +" are: ");
 		for(int i=2;i<=n;i++){
 			flag=true;
 			for(int j=2;j<=i/2;j++){
