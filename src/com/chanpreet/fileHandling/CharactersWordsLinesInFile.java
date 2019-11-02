@@ -10,38 +10,33 @@ public class CharactersWordsLinesInFile {
 		
 		char ch[];
 		String str;
-		
-		Scanner sc1 = new Scanner(new File("E:\\Chan\\Java-Practical-File\\JavaPracticalFile\\src\\com\\chanpreet\\fileHandling\\File1.txt"));
-		System.out.println("\nReading File Character by Character");
+		int cc=0,cw=0,cl=0;
+		Scanner sc1 = new Scanner(new File("E:\\File1.txt"));//save file in e(or any other) drive directly
+		System.out.print("\nReading File Character by Character");
 		while(sc1.hasNext()){
 			ch = sc1.next().toCharArray();
-			display(ch);
+			cc=cc+ch.length;
 		}
+		System.out.println("\nTotal Number Of Characters: "+cc);
 		sc1.close();
 		
-		System.out.println("\nReading File Word by Word");
-		Scanner sc2 = new Scanner(new File("E:\\Chan\\Java-Practical-File\\JavaPracticalFile\\src\\com\\chanpreet\\fileHandling\\File1.txt"));
+		System.out.print("\nReading File Word by Word");
+		Scanner sc2 = new Scanner(new File("E:\\File1.txt"));
 		while(sc2.hasNext()){
 			str = sc2.next();
-			System.out.println(str+ " ");
+			cw+=1;
 		}
+		System.out.println("\nTotal Number Of Words: "+cw);
 		sc2.close();
 
-		System.out.println("\nReading Line Word by Line");
-		Scanner sc3 = new Scanner(new File("E:\\Chan\\Java-Practical-File\\JavaPracticalFile\\src\\com\\chanpreet\\fileHandling\\File1.txt"));
+		System.out.print("\nReading Line Word by Line");
+		Scanner sc3 = new Scanner(new File("E:\\File1.txt"));
 		while(sc3.hasNext()){
 			str = sc3.nextLine();
-			System.out.println(str+ " ");
+			cl+=1;
 		}
+		System.out.println("\nTotal Number Of Lines: "+cl);
 		sc3.close();
 		
 	}
-
-	
-	private static void display(char[] ch) {
-		for(char c : ch){
-			System.out.println(c);
-		}
-	}
-
 }
