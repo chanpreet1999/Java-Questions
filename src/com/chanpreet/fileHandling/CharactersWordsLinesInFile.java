@@ -37,6 +37,5 @@ public class CharactersWordsLinesInFile {
 		}
 		System.out.println("\nTotal Number Of Lines: "+cl);
 		sc3.close();
-		
 	}
 }
