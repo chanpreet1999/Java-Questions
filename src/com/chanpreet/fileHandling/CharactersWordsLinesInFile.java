@@ -11,7 +11,7 @@ public class CharactersWordsLinesInFile {
 		char ch[];
 		String str;
 		int cc=0,cw=0,cl=0;
-		Scanner sc1 = new Scanner(new File("E:\\File1.txt"));//save file in e(or any other) drive directly
+		Scanner sc1 = new Scanner(new File("E:\\Chan\\Java-Practical-File\\JavaPracticalFile\\src\\com\\chanpreet\\fileHandling\\File1.txt"));
 		System.out.print("\nReading File Character by Character");
 		while(sc1.hasNext()){
 			ch = sc1.next().toCharArray();
@@ -21,7 +21,7 @@ public class CharactersWordsLinesInFile {
 		sc1.close();
 		
 		System.out.print("\nReading File Word by Word");
-		Scanner sc2 = new Scanner(new File("E:\\File1.txt"));
+		Scanner sc2 = new Scanner(new File("E:\\Chan\\Java-Practical-File\\JavaPracticalFile\\src\\com\\chanpreet\\fileHandling\\File1.txt"));
 		while(sc2.hasNext()){
 			str = sc2.next();
 			cw+=1;
@@ -30,7 +30,7 @@ public class CharactersWordsLinesInFile {
 		sc2.close();
 
 		System.out.print("\nReading Line Word by Line");
-		Scanner sc3 = new Scanner(new File("E:\\File1.txt"));
+		Scanner sc3 = new Scanner(new File("E:\\Chan\\Java-Practical-File\\JavaPracticalFile\\src\\com\\chanpreet\\fileHandling\\File1.txt"));
 		while(sc3.hasNext()){
 			str = sc3.nextLine();
 			cl+=1;
